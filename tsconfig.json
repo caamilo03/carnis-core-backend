@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2020",             /* Versión segura de JS */
+    "module": "commonjs",           /* Estándar de Node.js */
+    "outDir": "./dist",             /* Carpeta para el código productivo */
+    "rootDir": "./src",             /* Dónde escribiremos el código */
+    "strict": true,                 /* Modo estricto activado (Industry Standard) */
+    "esModuleInterop": true,        /* Compatibilidad entre módulos */
+    "skipLibCheck": true,           /* Ignora chequeos en librerías externas */
+    "forceConsistentCasingInFileNames": true /* Evita errores en Linux/Mac */
+  },
+  "include": ["src/**/*"],          /* Solo compila lo que esté en src */
+  "exclude": ["node_modules", "**/*.test.ts"]
+}
