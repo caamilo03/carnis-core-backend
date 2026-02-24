@@ -4,9 +4,10 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+  
 }
 
-// --- EL PLANO DE LA BASE DE DATOS ---
+
 
 model User {
   id        String   @id @default(uuid())
