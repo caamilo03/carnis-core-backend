@@ -4,11 +4,11 @@
   "description": "Backend API for CarnisCore: An inventory management and meat processing system built with Express, TypeScript, and PostgreSQL",
   "main": "index.js",
   "scripts": {
-      "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-      "build": "tsc",
-      "start": "node dist/server.js",
-      "lint": "eslint . --ext .ts"
-    },
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint . --ext .ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/caamilo03/carnis-core-backend.git"
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/caamilo03/carnis-core-backend#readme",
   "dependencies": {
+    "@prisma/client": "^7.4.1",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
@@ -35,6 +36,7 @@
     "@types/node": "^25.2.3",
     "eslint": "^10.0.0",
     "prettier": "^3.8.1",
+    "prisma": "^7.4.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
   }
