@@ -2,6 +2,9 @@ import express, {Application, Request, Response} from "express";
 import cors from "cors";
 import helmet from "helmet";
 
+import userRoutes from "./routes/userRoutes";
+
+
 
 const app: Application = express();
 
@@ -17,5 +20,6 @@ app.get("/", (req: Request, res: Response) => {
     });
 });
 
+app.use("/api/users", userRoutes);
 
 export default app;
